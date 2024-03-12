@@ -1,0 +1,188 @@
+body {
+    background: #233142; 
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content:center;
+    background-color: #0f001a;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: white;
+
+}
+
+
+/* Calculator style */
+
+.calculator-container {
+    border:solid #fffb00 1px;
+    background: #21002b; 
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    min-height: 400px;
+}
+
+/* Screen */
+
+#calculator-screen {
+    width: auto;
+    height: 90px;
+    margin-left: auto;
+    display: flex;
+}
+
+.screen-text>p {
+
+    color: #fffb00;
+    margin: 0;
+    
+}
+
+#show-value {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    margin: 10px 10px 0 10px;
+}
+
+#new-value {
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.screen-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Buttons */
+
+button {
+    background: #301258; 
+    padding: 0;
+    font-size: 25px;
+    border: solid #fbff00b7 1px;
+    color: #fffb00; 
+
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    min-height: 310px;
+    max-width:  350px;
+    max-height: 425px;
+
+}
+
+
+
+/* First Button line  */
+
+.first-botton-line {
+    display: flex;
+    flex-basis: 80.4px;
+    
+}
+
+.first-botton-line > button {
+    flex-grow: 1;
+    max-height:80px;
+    min-height: 80px;
+    max-width: 87.5px;
+}
+
+#ac {
+    flex-grow: 2;
+    min-width: 175px;
+    background: #24004d; 
+    color:#fffb00
+}
+
+/* Second Button line */
+
+.second-botton-line {
+    display: flex;
+    flex-basis: 80.4px;
+}
+
+.second-botton-line > button {
+    flex-grow: 1;
+    max-height:87.5px;
+    min-height: 87.5px;
+    min-width: 87.5px;
+}
+
+
+/* Third Button line */
+
+.third-botton-line {
+    display: flex;
+    flex-basis: 80.4px;
+
+}
+
+.third-botton-line > button {
+    flex-grow: 1;
+    max-height:87.5px;
+    min-height: 87.5px;
+    min-width: 87.5px;
+}
+
+
+/* Fourth button line */
+.fourth-botton-line {
+    display: flex;
+    flex-basis: 80.4px;
+}
+
+.fourth-botton-line > button {
+    flex-grow: 1;
+    max-height:87.5px;
+    min-height: 87.5px;
+    min-width: 87.5px;
+
+}
+
+
+/* Fifth button line */
+.fifth-botton-line {
+    display: flex;
+    flex-basis: 80.4px;
+   
+}
+
+.fifth-botton-line > button {
+    flex-grow: 1;
+    max-height:80px;
+    min-height: 80px;
+    min-width: 87.5px;
+}
+
+#equal {
+    flex-grow: 2;
+    min-width: 175px;
+    background-color:#24004d;
+    color: #fffb00;
+}
