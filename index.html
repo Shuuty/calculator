@@ -14,53 +14,49 @@
     <div class="header">
     <h1>Calculator</h1>
     </div>
-    <div class="container">
+        <div class="container">
+            <div class="calculator">
 
-      <div class="calculator-container"> 
-        <div id="calculator-screen">
-            <div class="screen-text">
-            <p  id="show-value"></p>
-            <p  id="new-value"></p>
+                <div class="calculator-screen">
+                    <p class="screen-show-operation">0</p>
+                    <p class="screen-show-result">0</p>
+                </div>
+
+                <div class="calculator-buttons">
+                    <div class="fifth-button-line">
+                        <button class="double-size" onclick="clearAll()">AC</button>
+                        <button onclick="deleteLastOne()">C</button>
+                        <button class="numAndOp">÷</button>
+                    </div>
+                    
+                    <div class="fourth-button-line">
+                        <button class="numAndOp">7</button>
+                        <button class="numAndOp">8</button>
+                        <button class="numAndOp">9</button>
+                        <button class="numAndOp">★</button>
+                    </div>
+                    
+                    <div class="third-button-line">
+                        <button class="numAndOp">4</button>
+                        <button class="numAndOp">5</button>
+                        <button class="numAndOp">6</button>
+                        <button class="numAndOp">-</button>
+                    </div>
+                    
+                    <div class="second-button-line">
+                        <button class="numAndOp">1</button>
+                        <button class="numAndOp">2</button>
+                        <button class="numAndOp">3</button>
+                        <button class="numAndOp">+</button>
+                    </div>
+                    
+                    <div class="first-button-line">
+                        <button class="numAndOp">0</button>
+                        <button class="numAndOp">.</button>
+                        <button class="double-size" onclick="executeTheOperation()">=</button>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-
-        <div class="container-button">
-            <div class="first-botton-line">
-                <button type="button" id="ac" onclick="clearScreen()">AC</button>
-                <button type="button" id="c" value="c" onclick="clearLast()">C</button>
-                <button type="button" id="divide" class="operator-button" value="/">÷</button>
-            </div>
-
-            <div class="second-botton-line">
-                <button type="button" id="seven" class="number-button" value="7">7</button>
-                <button type="button" id="eight" class="number-button"  value="8" onclick="">8</button>
-                <button type="button" id="nine" class="number-button" value="9">9</button>
-                <button type="button" id="sum" class="operator-button" value="+">+</button>
-            </div>
-
-            <div class="third-botton-line">
-                <button type="button" id="four" class="number-button" value="4">4</button>
-                <button type="button" id="five" class="number-button" value="5">5</button>
-                <button type="button" id="six" class="number-button" value="6">6</button>
-                <button type="button" id="substraction" class="operator-button" value="-">-</button>
-            </div>
-
-            <div class="fourth-botton-line">
-                <button type="button" id="one" class="number-button" value="1" >1</button>
-                <button type="button" id="two" class="number-button" value="2" >2</button>
-                <button type="button" id="three" class="number-button" value="3">3</button>
-                <button type="button" id="multiply" class="operator-button" value="*">★</button>
-            </div>
-
-
-            <div class="fifth-botton-line">
-                <button type="button" id="zero" class="number-button" value="0">0</button>
-                <button type="button" id="point" class="operator-button" value=".">.</button>
-                <button type="button" id="equal" value="=" onclick="operation()">=</button>
-            </div>
-        </div>
-      </div>
-    </div>
 </body>
 </html>

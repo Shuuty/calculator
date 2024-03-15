@@ -1,188 +1,128 @@
 body {
-    background: #233142; 
-    margin: 0;
     padding: 0;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    margin: 0;
+    background-color: rgb(20, 0, 37) ;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-
 }
 
-/* Header */
 .header {
+    background-color: rgb(29, 10, 65);
+    height: 70px;
     display: flex;
-    justify-content:center;
-    background-color: #0f001a;
-    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
 }
 
 h1 {
+    margin: 0;
     color: white;
-
 }
 
-
-/* Calculator style */
-
-.calculator-container {
-    border:solid #fffb00 1px;
-    background: #21002b; 
-    display: flex;
-    flex-direction: column;
-    min-width: 350px;
-    min-height: 400px;
+.calculator {
+    border: solid #ffff55 1px;
+    max-width: 300px;
+    max-height: 400px;
+    margin: auto;
+    padding: 25px;
+    background-color: #20003d;
 }
 
 /* Screen */
 
-#calculator-screen {
-    width: auto;
-    height: 90px;
-    margin-left: auto;
-    display: flex;
-}
-
-.screen-text>p {
-
-    color: #fffb00;
-    margin: 0;
-    
-}
-
-#show-value {
-    font-size: 30px;
-    margin-bottom: 20px;
-    display: flex;
-    margin: 10px 10px 0 10px;
-}
-
-#new-value {
-    display: flex;
-    justify-content: end;
-    font-size: 25px;
-    margin: 10px;
-}
-
-.screen-text {
+.calculator-screen {
+    border: solid #ffff55 1px;
+    background-color: #220035;
+    color: #ffff00;
     display: flex;
     flex-direction: column;
+    max-width: 280px;
+    max-height: 80px;
+    align-items: flex-end;
+    padding: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
 
+.screen-show-operation {
+    
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
+.screen-show-result {
+    margin: 0;
 }
 
 /* Buttons */
 
 button {
-    background: #301258; 
-    padding: 0;
-    font-size: 25px;
-    border: solid #fbff00b7 1px;
-    color: #fffb00; 
-
+    margin: 0;
+    background-color: #180025;
+    color: #ffff00;
+    border:solid 1px #ffff55;
+    font-size: 23px;
 }
 
-.container-button {
+.calculator-buttons {
+    border: solid #ffff55 1px;
+    max-height: 350px;
+    max-width: 280px;
     display: flex;
     flex-direction: column;
-    min-width: 350px;
-    min-height: 310px;
-    max-width:  350px;
-    max-height: 425px;
-
 }
 
-
-
-/* First Button line  */
-
-.first-botton-line {
+.first-button-line {
     display: flex;
-    flex-basis: 80.4px;
-    
 }
 
-.first-botton-line > button {
-    flex-grow: 1;
-    max-height:80px;
-    min-height: 80px;
-    max-width: 87.5px;
+.first-button-line>button {
+    width: 70px;
+    height: 60px;
 }
 
-#ac {
-    flex-grow: 2;
-    min-width: 175px;
-    background: #24004d; 
-    color:#fffb00
-}
-
-/* Second Button line */
-
-.second-botton-line {
+.second-button-line {
     display: flex;
-    flex-basis: 80.4px;
 }
 
-.second-botton-line > button {
-    flex-grow: 1;
-    max-height:87.5px;
-    min-height: 87.5px;
-    min-width: 87.5px;
+.second-button-line> button {
+    width: 70px;
+    height: 60px;
 }
 
-
-/* Third Button line */
-
-.third-botton-line {
+.third-button-line {
     display: flex;
-    flex-basis: 80.4px;
-
 }
 
-.third-botton-line > button {
-    flex-grow: 1;
-    max-height:87.5px;
-    min-height: 87.5px;
-    min-width: 87.5px;
+.third-button-line> button {
+    width: 70px;
+    height: 60px;
 }
 
-
-/* Fourth button line */
-.fourth-botton-line {
+.fourth-button-line {
     display: flex;
-    flex-basis: 80.4px;
 }
 
-.fourth-botton-line > button {
-    flex-grow: 1;
-    max-height:87.5px;
-    min-height: 87.5px;
-    min-width: 87.5px;
-
+.fourth-button-line> button {
+    width: 70px;
+    height: 60px;
 }
 
-
-/* Fifth button line */
-.fifth-botton-line {
+.fifth-button-line {
     display: flex;
-    flex-basis: 80.4px;
-   
 }
 
-.fifth-botton-line > button {
-    flex-grow: 1;
-    max-height:80px;
-    min-height: 80px;
-    min-width: 87.5px;
+.fifth-button-line > button {
+    width: 70px;
+    height: 60px;
 }
 
-#equal {
-    flex-grow: 2;
-    min-width: 175px;
-    background-color:#24004d;
-    color: #fffb00;
+.double-size {
+    width: 140px !important;
+    height: 60px;
 }
