@@ -23,7 +23,7 @@ function enterNumAndOp(entrance) {
 
     // Limit the number of `.`
     if(entrance === `.` && x.includes(`.`) && y == `` )return;
-    if(entrance === `.` && y.includes(`.`)) return;
+    if(entrance === `.` && y.includes(`.`) && op !== ``) return;
     
     console.log(entrance);
     if(currentOperation.textContent === 0) {
@@ -35,9 +35,10 @@ function enterNumAndOp(entrance) {
             operators.forEach(operator => {
                 if(entrance !== operator) return;
                 else if(entrance === operator){
-                    x = opResult;
+                    x = ``;
                     y = ``;
                     op = ``;
+                    x = opResult;
                     opResult = ``;
                 }
             })
